@@ -1,0 +1,449 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  background-color: rgb(243, 147, 113);
+  width: 100%;
+  height: 60px;
+  z-index: 100;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+  height: 40px;
+}
+
+.nav a {
+  text-decoration: none;
+}
+
+.navtool a {
+  padding: 20px;
+  color: black;
+}
+
+.navtool a:hover,
+.navtool a.active {
+  color: white;
+}
+
+.main h4 {
+  font-size: 25px;
+  color: black;
+  text-shadow: 2px 1px 1px;
+}
+
+.main h4 span {
+  color: white;
+}
+
+.icon a {
+  padding: 15px;
+  color: black;
+}
+
+.icon a:hover {
+  color: white;
+}
+
+.catlog img {
+  margin-top: 50px !important;
+  height: 400px;
+  width: 100%;
+  box-shadow: 1px 1px 1px;
+}
+
+.mainpic {
+  font-size: 50px;
+  position: absolute;
+  top: 150px;
+  left: 50px;
+}
+
+.mainpic p {
+  color: black;
+  text-shadow: 2px 2px 2px;
+}
+
+.mainpic p span {
+  color: white;
+}
+
+.box {
+  display: flex;
+  gap: 7px;
+  font-size: 13px;
+  box-sizing: border-box;
+  padding: 8px;
+  background-color: rgb(243, 147, 113);
+  margin-top: 40px;
+  border-radius: 10px;
+}
+
+.vl {
+  border: 1px solid black;
+}
+
+.mainpic button {
+  color: white;
+  background-color: black;
+  border-style: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.mainpic button:hover {
+  color: black;
+  background-color: white;
+}
+
+.topic h2 {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #000;
+  line-height: 2px;
+  margin: 50px 0 50px;
+}
+
+h2 span {
+  background: #fff;
+  padding: 0 10px;
+}
+
+.box-2 {
+  background-color: rgb(240, 167, 141);
+  width: 90%;
+  margin: 10px auto;
+  height: 450px;
+  padding: 10px;
+}
+
+.boxflex h4 {
+  margin-top: 10px;
+}
+
+.flex {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.flex > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 380px;
+}
+
+.women,
+.Men,
+.Kids {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0px;
+  padding: 10px;
+}
+
+.women > div,
+.Men > div,
+.Kids > div {
+  margin: 10px;
+  height: 150px;
+}
+
+.women img,
+.Men img,
+.Kids img {
+  height: 110px;
+  width: 120px;
+}
+
+.product img {
+  height: 250px;
+  width: 200px;
+}
+
+.products {
+  display: flex;
+  justify-content: space-around;
+}
+
+.pro h1 {
+  text-align: center;
+  padding: 20px;
+  color: black;
+}
+
+.pro h1 span {
+  color: rgb(230, 129, 129);
+}
+
+.desc h4 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: 10px;
+}
+
+.desc-1 i {
+  color: rgb(243, 243, 8);
+}
+
+.desc-2 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  padding: 10px;
+}
+
+.desc-2 del {
+  color: gray;
+}
+
+.cont {
+  background-color: rgb(240, 167, 141);
+  height: 180px;
+  margin-top: 20px;
+}
+
+.contact h1 span {
+  color: white;
+}
+
+.cont .contact {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 80px;
+}
+
+.contact form input {
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.contact form button {
+  padding: 5px;
+  border-radius: 10px;
+}
+
+footer {
+  height: 200px;
+}
+
+.foot {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+}
+
+.foot-1 h2 span {
+  color: white;
+}
+
+.foot-1 a {
+  color: black;
+}
+
+.foot-1 a:hover {
+  color: brown;
+}
+
+.foot-2 .link,
+.foot-3 .link,
+.foot-4 .link {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.link a {
+  padding: 5px;
+  color: black;
+  text-decoration: none;
+}
+
+.link a:hover {
+  color: brown;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  header {
+    height: 80px;
+  }
+  .nav {
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 892px) {
+  .nav {
+    flex-direction: column;
+  }
+  .products {
+    flex-direction: column;
+  }
+  .flex {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .flex {
+    grid-template-columns: 1fr;
+  }
+  .box-2 {
+    height: auto;
+  }
+  .boxflex {
+    margin: 10px 0;
+  }
+  .navtool a {
+    padding: 10px;
+  }
+  .icon a {
+    padding: 10px;
+  }
+  .mainpic {
+    top: 100px;
+    left: 20px;
+    font-size: 30px;
+    padding: 10px;
+  }
+  .catlog img {
+    height: 300px;
+  }
+  .box {
+    width: 220px;
+    height: 30px;
+    text-align: center;
+    margin-top: 30px;
+    padding: 5px;
+  }
+  .box h4 {
+    font-size: 8px;
+  }
+  .product img {
+    height: 200px;
+    width: 150px;
+    padding: 10px 85px;
+  }
+  .pro h1 {
+    font-size: 24px;
+  }
+  .desc h4 {
+    font-size: 15px;
+    text-align: center;
+  }
+  .desc-1 {
+    padding-left: 140px;
+  }
+  .desc-2 {
+    font-size: 12px;
+    padding: 10px 90px;
+  }
+  .products {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+  }
+}
+
+@media (max-width: 476px) {
+  .nav {
+    padding: 10px;
+  }
+  .navtool a {
+    padding: 5px;
+    font-size: 12px;
+  }
+  .icon a {
+    padding: 5px;
+    font-size: 12px;
+  }
+  .main h4 {
+    font-size: 20px;
+  }
+  .mainpic {
+    top: 80px;
+    left: 10px;
+    font-size: 20px;
+  }
+  .mainpic p {
+    font-size: 16px;
+  }
+  .box {
+    width: 180px;
+    height: 30px;
+    text-align: center;
+    margin-top: 20px;
+    padding: 5px;
+  }
+  .box h4 {
+    font-size: 7px;
+  }
+  .catlog img {
+    height: 200px;
+  }
+  .product img {
+    height: 250px;
+    width: 200px;
+    padding: 10px 110px;
+  }
+  .products{
+    display: grid;
+    grid-template-columns: 1fr;
+
+  }
+  .pro h1 {
+    font-size: 20px;
+  }
+  .desc h4 {
+    font-size: 15px;
+    text-align: center;
+  }
+  .desc-1 {
+    padding-left: 150px;
+  }
+  .desc-2 {
+    font-size: 10px;
+    padding: 10px 150px;
+  }
+  .cont {
+    height: auto;
+    padding: 20px;
+  }
+  .contact {
+    flex-direction: column;
+  }
+  .contact form input,
+  .contact form button {
+    width: 100%;
+    margin: 5px 0;
+  }
+  footer {
+    height: auto;
+  }
+  .foot {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .foot-1,
+  .foot-2,
+  .foot-3,
+  .foot-4 {
+    margin-bottom: 20px;
+  }
+  .mainpic button {
+    width: 80px;
+    height: 20px;
+    font-size: xx-small;
+    margin-bottom: 80px;
+  }
+}
